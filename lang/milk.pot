@@ -1,0 +1,1908 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#: framework/custom-widgets.php:715 framework/custom-widgets.php:717
+#: framework/custom-widgets.php:804
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: BUG-EMAIL-ADDR <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: yyyy-mm-dd hh:mm+0000\n"
+"PO-Revision-Date: 2015-07-20 18:46+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Eazy Po 0.9.5.3\n"
+
+#: archive-page.php:21
+msgid "Last 10 posts"
+msgstr ""
+
+#: archive-page.php:39
+msgid "Archives by month"
+msgstr ""
+
+#: archive-page.php:56
+msgid "Archives by format"
+msgstr ""
+
+#: archive.php:76
+msgid "All posts in "
+msgstr ""
+
+#: archive.php:79
+#, php-format
+msgid "All posts tagged %s"
+msgstr ""
+
+#: archive.php:82 archive.php:85 archive.php:88
+msgid "Archive for "
+msgstr ""
+
+#: archive.php:91
+msgid "All posts by "
+msgstr ""
+
+#: archive.php:94
+#, php-format
+msgid "All items in %s"
+msgstr ""
+
+#: archive.php:96
+#, php-format
+msgid "All posts in %s"
+msgstr ""
+
+#: archive.php:119 comments.php:24 functions.php:396 search.php:88
+#: single-post.php:311
+msgid "<"
+msgstr ""
+
+#: archive.php:120 comments.php:25 functions.php:397 search.php:89
+#: single-post.php:310
+msgid ">"
+msgstr ""
+
+#: categories-page.php:75 single-work.php:163
+msgid "View"
+msgstr ""
+
+#: contact-page.php:29
+msgid "Name*"
+msgstr ""
+
+#: contact-page.php:32
+msgid "Email*"
+msgstr ""
+
+#: contact-page.php:37
+msgid "Subject*"
+msgstr ""
+
+#: contact-page.php:41
+msgid "Message*"
+msgstr ""
+
+#: contact-page.php:43
+msgid "Send Message"
+msgstr ""
+
+#: contact-page.php:47
+msgid "Oh snap! "
+msgstr ""
+
+#: contact-page.php:47
+msgid "Change a few things up and try submitting again."
+msgstr ""
+
+#: contact-page.php:52
+msgid "Well done! "
+msgstr ""
+
+#: contact-page.php:52
+msgid "Your message was sent succssfully!"
+msgstr ""
+
+#: footer.php:27
+msgid "All rights reserved."
+msgstr ""
+
+#: functions.php:119 framework/class-tgm-plugin-activation.php:161
+msgid "Install Required Plugins"
+msgstr ""
+
+#: functions.php:120 framework/class-tgm-plugin-activation.php:162
+msgid "Install Plugins"
+msgstr ""
+
+#: functions.php:121 framework/class-tgm-plugin-activation.php:163
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: functions.php:122
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: functions.php:123 framework/class-tgm-plugin-activation.php:165
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:124 framework/class-tgm-plugin-activation.php:166
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:125 framework/class-tgm-plugin-activation.php:167
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to install the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"installed."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to install the %s "
+"plugins. Contact the administrator of this site for help on getting the "
+"plugins installed."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:126 framework/class-tgm-plugin-activation.php:168
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:127 framework/class-tgm-plugin-activation.php:169
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:128 framework/class-tgm-plugin-activation.php:170
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugin. Contact the administrator of this site for help on getting the "
+"plugin activated."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugins. Contact the administrator of this site for help on getting the "
+"plugins activated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:129
+#, php-format
+msgid ""
+"The following plugin needs to be updated to it's latest version to ensure "
+"maximum compatibility with this theme:<br><br> %1$s. <br><br>To update the "
+"plugin you will need to deactivate and then delete the plugin. After which "
+"you will be asked to install the latest version packaged with the theme."
+msgid_plural ""
+"The following plugins need to be updated to their latest versions to ensure "
+"maximum compatibility with this theme:<br><br> %1$s. <br><br><b>To update "
+"the plugins you will need to deactivate and then delete the plugins. After "
+"which you will be asked to install the latest versions packaged with the "
+"theme.</b>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:130 framework/class-tgm-plugin-activation.php:172
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to update the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"updated."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to update the %s plugins. "
+"Contact the administrator of this site for help on getting the plugins "
+"updated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:131 framework/class-tgm-plugin-activation.php:173
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:132
+msgid "Activate installed plugin"
+msgid_plural "Activate installed plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:133 framework/class-tgm-plugin-activation.php:175
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: functions.php:134 framework/class-tgm-plugin-activation.php:177
+#: framework/class-tgm-plugin-activation.php:1952
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: functions.php:135
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#: functions.php:259 functions.php:261
+msgid "Work"
+msgstr ""
+
+#: functions.php:260 customizer/theme-customize.php:91
+msgid "Works"
+msgstr ""
+
+#: functions.php:262
+msgid "Add New Work"
+msgstr ""
+
+#: functions.php:263
+msgid "New Work"
+msgstr ""
+
+#: functions.php:264
+msgid "View Work"
+msgstr ""
+
+#: functions.php:265
+msgid "No works found"
+msgstr ""
+
+#: functions.php:266
+msgid "Edit Work"
+msgstr ""
+
+#: functions.php:267
+msgid "Search Works"
+msgstr ""
+
+#: functions.php:373
+msgid "Header Menu"
+msgstr ""
+
+#: functions.php:465
+msgid "Footer Widget Area"
+msgstr ""
+
+#: functions.php:474
+msgid "Footer Social Links Area"
+msgstr ""
+
+#: functions.php:483
+msgid "Blog Sidebar"
+msgstr ""
+
+#: functions.php:492
+msgid "Post Sidebar"
+msgstr ""
+
+#: functions.php:540
+msgid "Image Post Settings"
+msgstr ""
+
+#: functions.php:548
+msgid "Image Settings"
+msgstr ""
+
+#: functions.php:556
+msgid "Gallery Post Settings"
+msgstr ""
+
+#: functions.php:564
+msgid "Gallery Settings"
+msgstr ""
+
+#: functions.php:572
+msgid "Audio Post Settings"
+msgstr ""
+
+#: functions.php:580
+msgid "Audio Settings"
+msgstr ""
+
+#: functions.php:588
+msgid "Video Post Settings"
+msgstr ""
+
+#: functions.php:596
+msgid "Video Settings"
+msgstr ""
+
+#: functions.php:604
+msgid "Quote Post Settings"
+msgstr ""
+
+#: functions.php:612
+msgid "Link Post Settings"
+msgstr ""
+
+#: functions.php:620
+msgid "Chat Post Settings"
+msgstr ""
+
+#: functions.php:628
+msgid "Status Post Settings"
+msgstr ""
+
+#: functions.php:636
+msgid "Defaut Post Settings"
+msgstr ""
+
+#: functions.php:644
+msgid "Defaut Settings"
+msgstr ""
+
+#: functions.php:652
+msgid "Contact Page Settings"
+msgstr ""
+
+#: functions.php:660
+msgid "Default Page Settings"
+msgstr ""
+
+#: functions.php:668
+msgid "Categories Page Settings"
+msgstr ""
+
+#: functions.php:676
+msgid "Slider Settings"
+msgstr ""
+
+#: functions.php:684
+msgid "Work Page Settings"
+msgstr ""
+
+#: functions.php:700
+msgid "Title Visability"
+msgstr ""
+
+#: functions.php:702
+msgid "Select when the post title is displayed."
+msgstr ""
+
+#: functions.php:706 functions.php:720 functions.php:734
+msgid "Always show"
+msgstr ""
+
+#: functions.php:707 functions.php:721 functions.php:735
+msgid "Only on post page"
+msgstr ""
+
+#: functions.php:708 functions.php:722 functions.php:736
+msgid "Never show"
+msgstr ""
+
+#: functions.php:714
+msgid "Content Visability"
+msgstr ""
+
+#: functions.php:716
+msgid "Select when the post content is displayed."
+msgstr ""
+
+#: functions.php:728
+msgid "Meta Visability"
+msgstr ""
+
+#: functions.php:730
+msgid "Select when the post meta is displayed."
+msgstr ""
+
+#: functions.php:742
+msgid "Display Post Sharing Buttons"
+msgstr ""
+
+#: functions.php:744
+msgid "Check this if you want the social sharing buttons to be visible."
+msgstr ""
+
+#: functions.php:752
+msgid "Display Post Pagination"
+msgstr ""
+
+#: functions.php:754
+msgid "Check this if you want the post pagination links to be visible."
+msgstr ""
+
+#: functions.php:762
+msgid "Hide Comments"
+msgstr ""
+
+#: functions.php:764
+msgid ""
+"Choose to hide the comment form and comments. This does not close comments, "
+"it just hides them."
+msgstr ""
+
+#: functions.php:772 functions.php:1879
+msgid "Display Similar Posts"
+msgstr ""
+
+#: functions.php:774 functions.php:1881
+msgid ""
+"Choose to display similar posts to this one. Similar posts are based on tags."
+msgstr ""
+
+#: functions.php:783
+msgid "Work Card Style"
+msgstr ""
+
+#: functions.php:785
+msgid "Choose to display blog post with work card style."
+msgstr ""
+
+#: functions.php:793 functions.php:1822 functions.php:2714 functions.php:2761
+#: functions.php:2824 functions.php:2871
+msgid "Acent Color"
+msgstr ""
+
+#: functions.php:795
+msgid "Accent color for post preview"
+msgstr ""
+
+#: functions.php:933
+msgid "Post Image"
+msgstr ""
+
+#: functions.php:935
+msgid "Uploaded image will be shown on post page and on blog page."
+msgstr ""
+
+#: functions.php:942 functions.php:1537 functions.php:1846 functions.php:2701
+#: functions.php:2748 functions.php:2811 functions.php:2858
+msgid "Choose image"
+msgstr ""
+
+#: functions.php:943 functions.php:996 functions.php:1121 functions.php:1538
+#: functions.php:1591 functions.php:1716 functions.php:1847 functions.php:2212
+#: functions.php:2608 functions.php:2702 functions.php:2749 functions.php:2812
+#: functions.php:2859 framework/custom-widgets.php:645
+#: framework/custom-widgets.php:780
+msgid "Select"
+msgstr ""
+
+#: functions.php:944 functions.php:997 functions.php:1539 functions.php:1592
+#: functions.php:1848 functions.php:2213 functions.php:2703 functions.php:2750
+#: functions.php:2813 functions.php:2860 framework/custom-widgets.php:646
+#: framework/custom-widgets.php:781
+msgid "Select images"
+msgstr ""
+
+#: functions.php:986 functions.php:1581 functions.php:2202
+msgid "Gallery Images"
+msgstr ""
+
+#: functions.php:988 functions.php:1583 functions.php:2204
+msgid "Select images for slider gallery."
+msgstr ""
+
+#: functions.php:995 functions.php:1590 functions.php:2211
+#: framework/custom-widgets.php:644
+msgid "You can choose multiple images for slider by holding Ctrl (Cmd) button"
+msgstr ""
+
+#: functions.php:1009 functions.php:1604 functions.php:2224
+msgid "Slider Mode"
+msgstr ""
+
+#: functions.php:1011 functions.php:1606 functions.php:2226
+msgid "Type of transition between slides."
+msgstr ""
+
+#: functions.php:1015 functions.php:1610 functions.php:2230
+#: framework/custom-widgets.php:666
+msgid "Horizontal"
+msgstr ""
+
+#: functions.php:1016 functions.php:1611 functions.php:2231
+#: framework/custom-widgets.php:667
+msgid "Vertical"
+msgstr ""
+
+#: functions.php:1017 functions.php:1612 functions.php:2232
+#: framework/custom-widgets.php:668
+msgid "Fade"
+msgstr ""
+
+#: functions.php:1023 functions.php:1618 functions.php:2238
+msgid "Auto Slideshow"
+msgstr ""
+
+#: functions.php:1025 functions.php:1620 functions.php:2240
+msgid "Slides will automatically transition."
+msgstr ""
+
+#: functions.php:1033 functions.php:1628 functions.php:2248
+msgid "Pause"
+msgstr ""
+
+#: functions.php:1035 functions.php:1630 functions.php:2250
+#: framework/custom-widgets.php:686
+msgid "The amount of time (in ms) between each auto transition"
+msgstr ""
+
+#: functions.php:1113 functions.php:1708
+msgid "Audio File URL or Embed Code"
+msgstr ""
+
+#: functions.php:1115 functions.php:1710
+msgid ""
+"Insert a URL to an audio file (.mp3 for best compatibility) OR paste your "
+"3rd party (eg: soundcloud, spotify) embed code here."
+msgstr ""
+
+#: functions.php:1120 functions.php:1715
+msgid "Choose audio file"
+msgstr ""
+
+#: functions.php:1122 functions.php:1717
+msgid "Select audio file"
+msgstr ""
+
+#: functions.php:1169 functions.php:1764
+msgid "Embed Code"
+msgstr ""
+
+#: functions.php:1171 functions.php:1766
+msgid ""
+"If you want to use a 3rd party embedded video (eg: youtube, vimeo), paste "
+"your embed code here. Otherwise leave this field blank."
+msgstr ""
+
+#: functions.php:1217
+msgid "The Quote"
+msgstr ""
+
+#: functions.php:1219
+msgid "The actual quote for this post."
+msgstr ""
+
+#: functions.php:1227
+msgid "Optional Quote Reference"
+msgstr ""
+
+#: functions.php:1229
+msgid "A persons name or the quotes source."
+msgstr ""
+
+#: functions.php:1237 functions.php:1327 functions.php:1468
+msgid "Background Color"
+msgstr ""
+
+#: functions.php:1239
+msgid "The background color of blockquote"
+msgstr ""
+
+#: functions.php:1307
+msgid "Link URL"
+msgstr ""
+
+#: functions.php:1309
+msgid "The hyperlink displayed in the post."
+msgstr ""
+
+#: functions.php:1317
+msgid "Optional Link Description"
+msgstr ""
+
+#: functions.php:1319
+msgid "An optional short description about the link."
+msgstr ""
+
+#: functions.php:1329
+msgid "The background color of link"
+msgstr ""
+
+#: functions.php:1399
+msgid "Chat Dialog"
+msgstr ""
+
+#: functions.php:1401
+msgid "The chat dialog needs to be formated like this:"
+msgstr ""
+
+#: functions.php:1404
+msgid ""
+"\n"
+"John: Hello\n"
+"Mary: Hi John\n"
+"Jim: Bye."
+msgstr ""
+
+#: functions.php:1453
+msgid "Embedded Twitter Code"
+msgstr ""
+
+#: functions.php:1455
+msgid ""
+"If you would rather embed a tweet you can do so here. Code here will overide "
+"any content above and all post settings. Posts will still require a title."
+msgstr ""
+
+#: functions.php:1470
+msgid "The background color of status"
+msgstr ""
+
+#: functions.php:1528 customizer/theme-customize.php:141
+msgid "Image"
+msgstr ""
+
+#: functions.php:1530
+msgid "Upload an image for this post"
+msgstr ""
+
+#: functions.php:1812
+msgid "Short Description"
+msgstr ""
+
+#: functions.php:1814
+msgid "This description will be shown at work preview"
+msgstr ""
+
+#: functions.php:1824
+msgid "Accent color for work preview"
+msgstr ""
+
+#: functions.php:1837
+msgid "Preview Image"
+msgstr ""
+
+#: functions.php:1839
+msgid "Upload an image for work preview"
+msgstr ""
+
+#: functions.php:1859
+msgid "Client"
+msgstr ""
+
+#: functions.php:1861
+msgid "You can add client for this work"
+msgstr ""
+
+#: functions.php:1869
+msgid "Client URL"
+msgstr ""
+
+#: functions.php:1871
+msgid "You can add client url for this work"
+msgstr ""
+
+#: functions.php:1980
+msgid "Contact Form Header"
+msgstr ""
+
+#: functions.php:1982
+msgid "The text placed above the contact form (eg: Get in touch)."
+msgstr ""
+
+#: functions.php:1990
+msgid "Contact Form Email Address"
+msgstr ""
+
+#: functions.php:1992
+msgid ""
+"Where will the contact form be sent? Leaving this blank will default to the "
+"admin email address."
+msgstr ""
+
+#: functions.php:2000
+msgid "Google Maps Address"
+msgstr ""
+
+#: functions.php:2002
+msgid ""
+"The address used to retrive your google map. Leaving this blank result in no "
+"map."
+msgstr ""
+
+#: functions.php:2065
+msgid "Show sidebar"
+msgstr ""
+
+#: functions.php:2067
+msgid "Choose to add sidebar to this page."
+msgstr ""
+
+#: functions.php:2075
+msgid "Select sidebar"
+msgstr ""
+
+#: functions.php:2077
+msgid ""
+"Select sidebar from list. You can create and add new sidebar at widget page."
+msgstr ""
+
+#: functions.php:2097
+msgid "Sidebar position"
+msgstr ""
+
+#: functions.php:2099
+msgid "Select the position of sidebar on this page."
+msgstr ""
+
+#: functions.php:2103 customizer/theme-customize.php:1260
+msgid "Right"
+msgstr ""
+
+#: functions.php:2104 customizer/theme-customize.php:159
+#: customizer/theme-customize.php:1258
+msgid "Left"
+msgstr ""
+
+#: functions.php:2110
+msgid "Page width"
+msgstr ""
+
+#: functions.php:2112
+msgid ""
+"You can select page width in columns(12 by default is max width). Page "
+"container would be centered."
+msgstr ""
+
+#: functions.php:2116
+msgid "12 Columns"
+msgstr ""
+
+#: functions.php:2117
+msgid "10 Columns - 5/6"
+msgstr ""
+
+#: functions.php:2118
+msgid "8 Columns - 2/3"
+msgstr ""
+
+#: functions.php:2119
+msgid "6 Columns - 1/2"
+msgstr ""
+
+#: functions.php:2192
+msgid "Add Slider"
+msgstr ""
+
+#: functions.php:2194
+msgid "Adds slider under the header."
+msgstr ""
+
+#: functions.php:2338
+msgid "Work Categories Cards"
+msgstr ""
+
+#: functions.php:2340
+msgid "Show work categories cards instead of works cards on this page."
+msgstr ""
+
+#: functions.php:2378
+msgid "Number of columns"
+msgstr ""
+
+#: functions.php:2380
+msgid "Select number of columns for this categories page."
+msgstr ""
+
+#: functions.php:2384
+msgid "2"
+msgstr ""
+
+#: functions.php:2385
+msgid "3"
+msgstr ""
+
+#: functions.php:2386
+msgid "4"
+msgstr ""
+
+#: functions.php:2392
+msgid "Hover animation type"
+msgstr ""
+
+#: functions.php:2394
+msgid "Select hover animation type for category cards."
+msgstr ""
+
+#: functions.php:2398
+msgid "Type 1"
+msgstr ""
+
+#: functions.php:2399
+msgid "Type 2"
+msgstr ""
+
+#: functions.php:2400
+msgid "Type 3"
+msgstr ""
+
+#: functions.php:2471
+msgid "Read more"
+msgstr ""
+
+#: functions.php:2494
+msgid "Reply"
+msgstr ""
+
+#: functions.php:2516
+msgid "Anonymous"
+msgstr ""
+
+#: functions.php:2527
+msgid "Reply to "
+msgstr ""
+
+#: functions.php:2552
+msgid "Name"
+msgstr ""
+
+#: functions.php:2555
+msgid "Email"
+msgstr ""
+
+#: functions.php:2570
+msgctxt "noun"
+msgid "Comment"
+msgstr ""
+
+#: functions.php:2578
+msgid "Submit"
+msgstr ""
+
+#: functions.php:2599
+msgid "Upload favicon"
+msgstr ""
+
+#: functions.php:2600
+msgid "Show loader on all pages"
+msgstr ""
+
+#: functions.php:2609
+msgid "Select image"
+msgstr ""
+
+#: functions.php:2643
+msgctxt "taxonomy general name"
+msgid "Work Categories"
+msgstr ""
+
+#: functions.php:2644
+msgctxt "taxonomy singular name"
+msgid "Work Category"
+msgstr ""
+
+#: functions.php:2645
+msgid "Search Work Categories"
+msgstr ""
+
+#: functions.php:2646
+msgid "All Work Categories"
+msgstr ""
+
+#: functions.php:2647
+msgid "Parent Work Category"
+msgstr ""
+
+#: functions.php:2648
+msgid "Parent Work Category:"
+msgstr ""
+
+#: functions.php:2649
+msgid "Edit Work Category"
+msgstr ""
+
+#: functions.php:2650
+msgid "Update Work Category"
+msgstr ""
+
+#: functions.php:2651
+msgid "Add New Work Category"
+msgstr ""
+
+#: functions.php:2652
+msgid "New Work Category Name"
+msgstr ""
+
+#: functions.php:2653
+msgid "Work Categories"
+msgstr ""
+
+#: functions.php:2692 functions.php:2739 functions.php:2802 functions.php:2849
+msgid "Featured Image"
+msgstr ""
+
+#: functions.php:2694 functions.php:2741
+msgid ""
+"If you choose to show work categories on work page instead of works, you "
+"need to upload featured image for category"
+msgstr ""
+
+#: functions.php:2716 functions.php:2763
+msgid ""
+"If you choose to show work categories on work page instead of works, you "
+"need to select accent color for work categorie preview"
+msgstr ""
+
+#: functions.php:2804 functions.php:2851
+msgid ""
+"You need to upload featured image for category if you want to create "
+"categories page with card style."
+msgstr ""
+
+#: functions.php:2826 functions.php:2873
+msgid ""
+"You need to select accent color for work categorie preview if you want to "
+"create categories page with card style."
+msgstr ""
+
+#: home.php:101 index.php:101 taxonomy-work-categorie.php:46 work-page.php:137
+msgid "Load more"
+msgstr ""
+
+#: home.php:102 index.php:102 taxonomy-work-categorie.php:47 work-page.php:138
+msgid "Go to top"
+msgstr ""
+
+#: search.php:67
+msgid "Search results for"
+msgstr ""
+
+#: searchform.php:3
+msgid "Search..."
+msgstr ""
+
+#: taxonomy-work-categorie.php:32 work-page.php:123
+msgid "All"
+msgstr ""
+
+#: customizer/theme-customize.php:73
+msgid "Header Settings"
+msgstr ""
+
+#: customizer/theme-customize.php:74
+msgid ""
+"Select logo for your site. You can also change logo, tagline, welcome "
+"message, filters and menu settings."
+msgstr ""
+
+#: customizer/theme-customize.php:79
+msgid "Layout Settings"
+msgstr ""
+
+#: customizer/theme-customize.php:80
+msgid "Select blog type, layout and sidebar."
+msgstr ""
+
+#: customizer/theme-customize.php:85
+msgid "Logo"
+msgstr ""
+
+#: customizer/theme-customize.php:86
+msgid "Tagline"
+msgstr ""
+
+#: customizer/theme-customize.php:87
+msgid "Menu"
+msgstr ""
+
+#: customizer/theme-customize.php:88
+msgid "Welcome Message"
+msgstr ""
+
+#: customizer/theme-customize.php:89
+msgid "Filters"
+msgstr ""
+
+#: customizer/theme-customize.php:90
+msgid "Colors"
+msgstr ""
+
+#: customizer/theme-customize.php:92
+msgid "Background"
+msgstr ""
+
+#: customizer/theme-customize.php:93
+msgid "Buttons"
+msgstr ""
+
+#: customizer/theme-customize.php:94
+msgid "Typography"
+msgstr ""
+
+#: customizer/theme-customize.php:95
+msgid "Content"
+msgstr ""
+
+#: customizer/theme-customize.php:97
+msgid "Work Page Layout"
+msgstr ""
+
+#: customizer/theme-customize.php:98
+msgid "Blog Layout"
+msgstr ""
+
+#: customizer/theme-customize.php:99
+msgid "Archive and Search Layout"
+msgstr ""
+
+#: customizer/theme-customize.php:100
+msgid "Single Post Layout"
+msgstr ""
+
+#: customizer/theme-customize.php:102
+msgid "Footer"
+msgstr ""
+
+#: customizer/theme-customize.php:136
+msgid "Logo type"
+msgstr ""
+
+#: customizer/theme-customize.php:142
+msgid "Text"
+msgstr ""
+
+#: customizer/theme-customize.php:154
+msgid "Logo position"
+msgstr ""
+
+#: customizer/theme-customize.php:160 customizer/theme-customize.php:1259
+msgid "Center"
+msgstr ""
+
+#: customizer/theme-customize.php:172
+msgid "Margin top"
+msgstr ""
+
+#: customizer/theme-customize.php:188
+msgid "Margin bottom"
+msgstr ""
+
+#: customizer/theme-customize.php:204
+msgid "Upload a logo"
+msgstr ""
+
+#: customizer/theme-customize.php:217
+msgid "Upload a logo @2x"
+msgstr ""
+
+#: customizer/theme-customize.php:230 customizer/theme-customize.php:403
+#: customizer/theme-customize.php:595 customizer/theme-customize.php:781
+#: customizer/theme-customize.php:964 customizer/theme-customize.php:1297
+msgid "Font family"
+msgstr ""
+
+#: customizer/theme-customize.php:245 customizer/theme-customize.php:418
+#: customizer/theme-customize.php:610 customizer/theme-customize.php:796
+#: customizer/theme-customize.php:979 customizer/theme-customize.php:1312
+#: customizer/theme-customize.php:1514 customizer/theme-customize.php:1631
+#: customizer/theme-customize.php:1748 customizer/theme-customize.php:1864
+#: customizer/theme-customize.php:1980 customizer/theme-customize.php:2096
+#: customizer/theme-customize.php:2212
+msgid "Bold"
+msgstr ""
+
+#: customizer/theme-customize.php:259 customizer/theme-customize.php:432
+#: customizer/theme-customize.php:624 customizer/theme-customize.php:810
+#: customizer/theme-customize.php:993 customizer/theme-customize.php:1326
+#: customizer/theme-customize.php:1528 customizer/theme-customize.php:1645
+#: customizer/theme-customize.php:1762 customizer/theme-customize.php:1878
+#: customizer/theme-customize.php:1994 customizer/theme-customize.php:2110
+#: customizer/theme-customize.php:2226
+msgid "Uppercase"
+msgstr ""
+
+#: customizer/theme-customize.php:273 customizer/theme-customize.php:446
+#: customizer/theme-customize.php:638 customizer/theme-customize.php:824
+#: customizer/theme-customize.php:1007 customizer/theme-customize.php:1340
+#: customizer/theme-customize.php:1542 customizer/theme-customize.php:1659
+#: customizer/theme-customize.php:1776 customizer/theme-customize.php:1892
+#: customizer/theme-customize.php:2008 customizer/theme-customize.php:2124
+#: customizer/theme-customize.php:2240
+msgid "Italic"
+msgstr ""
+
+#: customizer/theme-customize.php:287 customizer/theme-customize.php:460
+#: customizer/theme-customize.php:652 customizer/theme-customize.php:838
+#: customizer/theme-customize.php:1021 customizer/theme-customize.php:1354
+#: customizer/theme-customize.php:1556 customizer/theme-customize.php:1673
+#: customizer/theme-customize.php:1790 customizer/theme-customize.php:1906
+#: customizer/theme-customize.php:2022 customizer/theme-customize.php:2138
+#: customizer/theme-customize.php:2254
+msgid "Font size"
+msgstr ""
+
+#: customizer/theme-customize.php:303 customizer/theme-customize.php:476
+#: customizer/theme-customize.php:668 customizer/theme-customize.php:1037
+#: customizer/theme-customize.php:1572 customizer/theme-customize.php:1689
+#: customizer/theme-customize.php:1806 customizer/theme-customize.php:1922
+#: customizer/theme-customize.php:2038 customizer/theme-customize.php:2154
+#: customizer/theme-customize.php:2270
+msgid "Line height"
+msgstr ""
+
+#: customizer/theme-customize.php:319 customizer/theme-customize.php:492
+#: customizer/theme-customize.php:684 customizer/theme-customize.php:854
+#: customizer/theme-customize.php:1053 customizer/theme-customize.php:1370
+#: customizer/theme-customize.php:1588 customizer/theme-customize.php:1705
+#: customizer/theme-customize.php:1822 customizer/theme-customize.php:1938
+#: customizer/theme-customize.php:2054 customizer/theme-customize.php:2170
+#: customizer/theme-customize.php:2286
+msgid "Letterspacing"
+msgstr ""
+
+#: customizer/theme-customize.php:335 customizer/theme-customize.php:508
+#: customizer/theme-customize.php:700 customizer/theme-customize.php:870
+#: customizer/theme-customize.php:1069 customizer/theme-customize.php:1604
+#: customizer/theme-customize.php:1721 customizer/theme-customize.php:1837
+#: customizer/theme-customize.php:1953 customizer/theme-customize.php:2069
+#: customizer/theme-customize.php:2185 customizer/theme-customize.php:2301
+msgid "Font color"
+msgstr ""
+
+#: customizer/theme-customize.php:347 customizer/theme-customize.php:1197
+msgid "Background color"
+msgstr ""
+
+#: customizer/theme-customize.php:373
+msgid "Show tagline under the logo"
+msgstr ""
+
+#: customizer/theme-customize.php:387 customizer/theme-customize.php:749
+msgid "Distance from logo"
+msgstr ""
+
+#: customizer/theme-customize.php:536
+msgid "Show welcome message"
+msgstr ""
+
+#: customizer/theme-customize.php:550
+msgid "Type welcome message"
+msgstr ""
+
+#: customizer/theme-customize.php:563
+msgid "Distance from menu"
+msgstr ""
+
+#: customizer/theme-customize.php:579 customizer/theme-customize.php:765
+msgid "Distance to content"
+msgstr ""
+
+#: customizer/theme-customize.php:882
+msgid "Hover color"
+msgstr ""
+
+#: customizer/theme-customize.php:894
+msgid "Hover text color"
+msgstr ""
+
+#: customizer/theme-customize.php:920
+msgid "Add filters for works"
+msgstr ""
+
+#: customizer/theme-customize.php:934
+msgid "Always show filters on works page"
+msgstr ""
+
+#: customizer/theme-customize.php:1090
+msgid "Header Background Color"
+msgstr ""
+
+#: customizer/theme-customize.php:1102
+msgid "Accent theme color"
+msgstr ""
+
+#: customizer/theme-customize.php:1114
+msgid "Accent theme fonts color"
+msgstr ""
+
+#: customizer/theme-customize.php:1134
+msgid "Works Hover Animation"
+msgstr ""
+
+#: customizer/theme-customize.php:1138
+msgid "Animation 1"
+msgstr ""
+
+#: customizer/theme-customize.php:1139
+msgid "Animation 2"
+msgstr ""
+
+#: customizer/theme-customize.php:1140
+msgid "Animation 3"
+msgstr ""
+
+#: customizer/theme-customize.php:1151
+msgid "Portfolio work button color"
+msgstr ""
+
+#: customizer/theme-customize.php:1163
+msgid "Portfolio work button text color"
+msgstr ""
+
+#: customizer/theme-customize.php:1175
+msgid "Portfolio work button text"
+msgstr ""
+
+#: customizer/theme-customize.php:1209
+msgid "Background Image Stretch"
+msgstr ""
+
+#: customizer/theme-customize.php:1223
+msgid "Upload background image"
+msgstr ""
+
+#: customizer/theme-customize.php:1236
+msgid "Background Repeat"
+msgstr ""
+
+#: customizer/theme-customize.php:1240
+msgid "No Repeat"
+msgstr ""
+
+#: customizer/theme-customize.php:1241
+msgid "Tile"
+msgstr ""
+
+#: customizer/theme-customize.php:1242
+msgid "Tile Horizontally"
+msgstr ""
+
+#: customizer/theme-customize.php:1243
+msgid "Tile Vertically"
+msgstr ""
+
+#: customizer/theme-customize.php:1254
+msgid "Background Position"
+msgstr ""
+
+#: customizer/theme-customize.php:1271
+msgid "Background Attachment"
+msgstr ""
+
+#: customizer/theme-customize.php:1275
+msgid "Fixed"
+msgstr ""
+
+#: customizer/theme-customize.php:1276
+msgid "Scroll"
+msgstr ""
+
+#: customizer/theme-customize.php:1386
+msgid "Rounded Corners "
+msgstr ""
+
+#: customizer/theme-customize.php:1468
+msgid "Paragraph Font family"
+msgstr ""
+
+#: customizer/theme-customize.php:1483
+msgid "Paragraph Font size"
+msgstr ""
+
+#: customizer/theme-customize.php:1499
+msgid "Sidebar Headings Font family"
+msgstr ""
+
+#: customizer/theme-customize.php:1616
+msgid "H1 Font family"
+msgstr ""
+
+#: customizer/theme-customize.php:1733
+msgid "H2 Font family"
+msgstr ""
+
+#: customizer/theme-customize.php:1849
+msgid "H3 Font family"
+msgstr ""
+
+#: customizer/theme-customize.php:1965
+msgid "H4 Font family"
+msgstr ""
+
+#: customizer/theme-customize.php:2081
+msgid "H5 Font family"
+msgstr ""
+
+#: customizer/theme-customize.php:2197
+msgid "H6 Font family"
+msgstr ""
+
+#: customizer/theme-customize.php:2317
+msgid "Content padding"
+msgstr ""
+
+#: customizer/theme-customize.php:2349
+msgid ""
+"Number of works to show(this option does't work in live preview, please save "
+"settings)"
+msgstr ""
+
+#: customizer/theme-customize.php:2362
+msgid "Number of colomns for home page"
+msgstr ""
+
+#: customizer/theme-customize.php:2367 customizer/theme-customize.php:2387
+#: customizer/theme-customize.php:2460
+msgid "Two"
+msgstr ""
+
+#: customizer/theme-customize.php:2368 customizer/theme-customize.php:2388
+#: customizer/theme-customize.php:2461
+msgid "Three"
+msgstr ""
+
+#: customizer/theme-customize.php:2369 customizer/theme-customize.php:2389
+#: customizer/theme-customize.php:2462
+msgid "Four"
+msgstr ""
+
+#: customizer/theme-customize.php:2381
+msgid "Number of colomns for blog page"
+msgstr ""
+
+#: customizer/theme-customize.php:2386 customizer/theme-customize.php:2459
+msgid "One (List View)"
+msgstr ""
+
+#: customizer/theme-customize.php:2401
+msgid "Select sidebar for blog page"
+msgstr ""
+
+#: customizer/theme-customize.php:2416
+msgid "Layout for blog page"
+msgstr ""
+
+#: customizer/theme-customize.php:2420 customizer/theme-customize.php:2493
+#: customizer/theme-customize.php:2529
+msgid "Left Sidebar"
+msgstr ""
+
+#: customizer/theme-customize.php:2421 customizer/theme-customize.php:2494
+#: customizer/theme-customize.php:2530
+msgid "Right Sidebar"
+msgstr ""
+
+#: customizer/theme-customize.php:2422 customizer/theme-customize.php:2495
+#: customizer/theme-customize.php:2531
+msgid "No Sidebar, 12 columns width"
+msgstr ""
+
+#: customizer/theme-customize.php:2423 customizer/theme-customize.php:2496
+#: customizer/theme-customize.php:2532
+msgid "No Sidebar, 10 columns width -5/6"
+msgstr ""
+
+#: customizer/theme-customize.php:2424 customizer/theme-customize.php:2497
+#: customizer/theme-customize.php:2533
+msgid "No Sidebar, 8 columns width - 2/3"
+msgstr ""
+
+#: customizer/theme-customize.php:2425 customizer/theme-customize.php:2498
+#: customizer/theme-customize.php:2534
+msgid "No Sidebar, 6 columns width - 1/2"
+msgstr ""
+
+#: customizer/theme-customize.php:2437
+msgid "Blog page Pagination Type"
+msgstr ""
+
+#: customizer/theme-customize.php:2441
+msgid "Standart Pagination"
+msgstr ""
+
+#: customizer/theme-customize.php:2442
+msgid "Load More Button"
+msgstr ""
+
+#: customizer/theme-customize.php:2454
+msgid "Number of colomns for search, archive results pages"
+msgstr ""
+
+#: customizer/theme-customize.php:2474
+msgid "Select sidebar for search, archive results pages"
+msgstr ""
+
+#: customizer/theme-customize.php:2489
+msgid "Layout for search, archive results pages"
+msgstr ""
+
+#: customizer/theme-customize.php:2510
+msgid "Select sidebar for single post page"
+msgstr ""
+
+#: customizer/theme-customize.php:2525
+msgid "Layout for single post results page"
+msgstr ""
+
+#: customizer/theme-customize.php:2552
+msgid "Footer color"
+msgstr ""
+
+#: customizer/theme-customize.php:2564
+msgid "Footer widgets color theme"
+msgstr ""
+
+#: customizer/theme-customize.php:2568 framework/custom-widgets.php:856
+msgid "Light"
+msgstr ""
+
+#: customizer/theme-customize.php:2569 framework/custom-widgets.php:855
+msgid "Dark"
+msgstr ""
+
+#: customizer/theme-customize.php:2580
+msgid "Upload footer logo"
+msgstr ""
+
+#: customizer/theme-customize.php:2593
+msgid "Upload footer logo @2x"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:164
+msgid "Something went wrong."
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:171
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/class-tgm-plugin-activation.php:174
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/class-tgm-plugin-activation.php:176
+msgid "Return to the dashboard"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:178
+#: framework/class-tgm-plugin-activation.php:1643
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/class-tgm-plugin-activation.php:179
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:180
+msgid "Dismiss this notice"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:536
+#: framework/class-tgm-plugin-activation.php:2169
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:1171
+msgid "Private Repository"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:1174
+msgid "Pre-Packaged"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:1179
+msgid "WordPress Repository"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:1182
+msgid "Required"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:1182
+msgid "Recommended"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:1185
+msgid "Not Installed"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:1187
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:1292
+#: framework/class-tgm-plugin-activation.php:1405
+msgid "Install"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:1316
+#: framework/class-tgm-plugin-activation.php:1406
+msgid "Activate"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:1368
+#, php-format
+msgid ""
+"No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
+"Dashboard\">Return to the Dashboard</a>"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:1384
+msgid "Plugin"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:1385
+msgid "Source"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:1386
+msgid "Type"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:1387
+msgid "Status"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:1935
+msgid "Install package not available."
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:1936
+#, php-format
+msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:1937
+msgid "Unpacking the package&#8230;"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:1938
+msgid "Installing the plugin&#8230;"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:1939
+msgid "Plugin install failed."
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:1940
+msgid "Plugin installed successfully."
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:1951
+msgid "Plugin activation failed."
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:2065
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:2066
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:2066
+#: framework/class-tgm-plugin-activation.php:2075
+msgid "Show Details"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:2066
+#: framework/class-tgm-plugin-activation.php:2075
+msgid "Hide Details"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:2067
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:2068
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:2072
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:2073
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:2074
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:2075
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:2076
+msgid "All installations have been completed."
+msgstr ""
+
+#: framework/class-tgm-plugin-activation.php:2077
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: framework/custom-widgets.php:45
+msgid "Helps you to add you social accounts"
+msgstr ""
+
+#: framework/custom-widgets.php:46
+msgid "Social Links"
+msgstr ""
+
+#: framework/custom-widgets.php:94 framework/custom-widgets.php:381
+#: framework/custom-widgets.php:521 framework/custom-widgets.php:552
+#: framework/custom-widgets.php:625 framework/custom-widgets.php:766
+#: framework/custom-widgets.php:843
+msgid "Title:"
+msgstr ""
+
+#: framework/custom-widgets.php:105
+msgid "Link:"
+msgstr ""
+
+#: framework/custom-widgets.php:186
+msgid "Your site&#8217;s most recent posts."
+msgstr ""
+
+#: framework/custom-widgets.php:187
+msgid "Milk Recent Posts"
+msgstr ""
+
+#: framework/custom-widgets.php:218
+msgid "Recent Posts"
+msgstr ""
+
+#: framework/custom-widgets.php:384
+msgid "Number of posts to show:"
+msgstr ""
+
+#: framework/custom-widgets.php:388
+msgid "Display post date?"
+msgstr ""
+
+#: framework/custom-widgets.php:397
+msgid "Your site&#8217;s most recent comments."
+msgstr ""
+
+#: framework/custom-widgets.php:398
+msgid "Milk Recent Comments"
+msgstr ""
+
+#: framework/custom-widgets.php:454
+msgid "Recent Comments"
+msgstr ""
+
+#: framework/custom-widgets.php:489
+#, php-format
+msgctxt "widgets"
+msgid "%1$s on %2$s"
+msgstr ""
+
+#: framework/custom-widgets.php:524
+msgid "Number of comments to show:"
+msgstr ""
+
+#: framework/custom-widgets.php:534
+msgid "Helps you to add Flickr Stream Widget"
+msgstr ""
+
+#: framework/custom-widgets.php:535
+msgid "Flickr Stream"
+msgstr ""
+
+#: framework/custom-widgets.php:555
+msgid "Flickr ID:"
+msgstr ""
+
+#: framework/custom-widgets.php:558
+msgid "Number of photos to show:"
+msgstr ""
+
+#: framework/custom-widgets.php:562
+msgid "Show random posts?"
+msgstr ""
+
+#: framework/custom-widgets.php:580
+msgid "Flickr"
+msgstr ""
+
+#: framework/custom-widgets.php:584
+msgid "52617155@N08"
+msgstr ""
+
+#: framework/custom-widgets.php:607
+msgid "Add a custom banner slider to your sidebar"
+msgstr ""
+
+#: framework/custom-widgets.php:608 framework/custom-widgets.php:711
+msgid "Banner Slider"
+msgstr ""
+
+#: framework/custom-widgets.php:628
+msgid "Upload images:"
+msgstr ""
+
+#: framework/custom-widgets.php:663
+msgid "Mode:"
+msgstr ""
+
+#: framework/custom-widgets.php:663
+msgid "Type of transition between slides"
+msgstr ""
+
+#: framework/custom-widgets.php:671
+msgid "Speed:"
+msgstr ""
+
+#: framework/custom-widgets.php:671
+msgid "Slide transition duration (in ms)"
+msgstr ""
+
+#: framework/custom-widgets.php:675
+msgid "Infinite Loop:"
+msgstr ""
+
+#: framework/custom-widgets.php:675
+msgid ""
+"Clicking 'Next' while on the last slide will transition to the first slide "
+"and vice-versa"
+msgstr ""
+
+#: framework/custom-widgets.php:678
+msgid "Include image captions:"
+msgstr ""
+
+#: framework/custom-widgets.php:678
+msgid "Captions are derived from the image's title attribute"
+msgstr ""
+
+#: framework/custom-widgets.php:681
+msgid "Adaptive Height:"
+msgstr ""
+
+#: framework/custom-widgets.php:681
+msgid "Dynamically adjust slider height based on each slide's height"
+msgstr ""
+
+#: framework/custom-widgets.php:684
+msgid "Auto Slideshow:"
+msgstr ""
+
+#: framework/custom-widgets.php:684
+msgid "Slides will automatically transition"
+msgstr ""
+
+#: framework/custom-widgets.php:686
+msgid "Pause:"
+msgstr ""
+
+#: framework/custom-widgets.php:716
+msgid "horizontal"
+msgstr ""
+
+#: framework/custom-widgets.php:756
+msgid "Add a custom banner image to your sidebar"
+msgstr ""
+
+#: framework/custom-widgets.php:757 framework/custom-widgets.php:800
+msgid "Banner Widget"
+msgstr ""
+
+#: framework/custom-widgets.php:769
+msgid "Upload image:"
+msgstr ""
+
+#: framework/custom-widgets.php:779
+msgid "Choose image for banner"
+msgstr ""
+
+#: framework/custom-widgets.php:822
+msgid "Add a twitter timeline widget"
+msgstr ""
+
+#: framework/custom-widgets.php:823
+msgid "Twitter Widget"
+msgstr ""
+
+#: framework/custom-widgets.php:846
+msgid "Twitter Username:"
+msgstr ""
+
+#: framework/custom-widgets.php:849
+msgid "Widget ID:"
+msgstr ""
+
+#: framework/custom-widgets.php:852
+msgid "Color Theme:"
+msgstr ""
+
+#: framework/custom-widgets.php:852
+msgid "Default Twitter color themes"
+msgstr ""
+
+#: framework/custom-widgets.php:859
+msgid "Links Color:"
+msgstr ""
+
+#: framework/custom-widgets.php:867
+msgid "No Header:"
+msgstr ""
+
+#: framework/custom-widgets.php:867
+msgid "Hides the timeline header"
+msgstr ""
+
+#: framework/custom-widgets.php:870
+msgid "No Footer:"
+msgstr ""
+
+#: framework/custom-widgets.php:870
+msgid "Hides the timeline footer and Tweet box, if included"
+msgstr ""
+
+#: framework/custom-widgets.php:873
+msgid "No Borders:"
+msgstr ""
+
+#: framework/custom-widgets.php:873
+msgid "Removes all borders within the widget"
+msgstr ""
+
+#: framework/custom-widgets.php:875
+msgid "Tweet limit:"
+msgstr ""
+
+#: framework/custom-widgets.php:875
+msgid "Number of tweets to show"
+msgstr ""
+
+#: framework/custom-widgets.php:902
+msgid "Twitter"
+msgstr ""
+
+#: framework/post-like.php:208 framework/post-like.php:268
+msgid "You Like:"
+msgstr ""
+
+#: framework/post-like.php:232
+msgid "You don't like anything yet."
+msgstr ""
+
+#: framework/post-like.php:300
+msgid "Today's Most Popular Posts"
+msgstr ""
+
+#: framework/post-like.php:332
+msgid "This Month's Most Popular Posts"
+msgstr ""
+
+#: framework/post-like.php:364
+msgid "This Week's Most Popular Posts"
+msgstr ""
+
+#: framework/post-like.php:383
+msgid "Most Popular Posts"
+msgstr ""

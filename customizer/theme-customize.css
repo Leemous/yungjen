@@ -1,0 +1,36 @@
+.control_slider.ui-slider {
+	position: relative;
+	text-align: left;
+	margin-top: 11px !important;
+	height: 2px !important;
+	background: #777 !important;
+	border: none !important;
+}
+
+.control_slider .ui-slider-handle {
+	top:-9px;
+	left:-10px;
+	position: absolute;
+	z-index: 2;
+	width: 20px;
+	height: 20px;
+	cursor: default;
+	background: #49b4ff;
+	-webkit-border-radius: 100px !important;
+	-khtml-border-radius: 100px !important;
+	-moz-border-radius: 100px !important;
+	-ms-border-radius: 100px !important;
+	-o-border-radius: 100px !important;
+	border-radius: 100px !important;
+}
+li[id$='font_weight'],
+li[id$='text_transform'],
+li[id$='italic']{
+	display: inline-block;
+	width: auto;
+	float: none;
+	margin-right: 10px;
+}
+.customize-control-radio label{
+	line-height: 20px;
+}
