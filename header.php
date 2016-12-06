@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-	<title>
-		<?php 
-			wp_title( '-', true, 'right' );
-		?>
-	</title>
+	<title>The Blog Of Yungjen</title>
 	<link href="<?php echo esc_url(get_option( 'favicon', '' )) ?>" rel="icon" type="image/png" />
 	<link rel="shortcut icon" href="<?php echo esc_url(get_option( 'favicon', '' )) ?>" type="image/x-icon" />
 	<meta name="viewport" content="width=device-width, initial-scale = 1.0">

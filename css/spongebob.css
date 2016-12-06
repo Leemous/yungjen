@@ -1,27 +1,49 @@
 /*
     Spongebob style sheet.
 */
-@media only screen and ( min-width : 1600px) {
-    body {
-        position: relative;
-        padding-left: 430px;
-    }
+body {
+    font-family: -apple-system, 'PingFang SC', 'Microsoft YaHei';
+    position: relative;
+    padding-left: 440px;
+}
 
-    header#top {
-        position: fixed;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        width: 430px;
-    }
+#top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 440px;
+}
 
-    header#top .container {
-        width: auto;
-        position: relative;
-        overflow: hidden;
-    }
+#top .container {
+    width: auto;
+    position: relative;
+    overflow: hidden;
+}
 
-    ul#menu-main-menu li {
-        display: block;
-    }
+#menu-main-menu li {
+    display: block;
+}
+
+.logo img {
+    border-radius: 50%;
+}
+
+::-webkit-scrollbar  
+{  
+    width: 5px;
+    height: 5px;
+    background-color: #333;  
+}  
+  
+::-webkit-scrollbar-track  
+{  
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);  
+    background-color: #333;  
+}  
+  
+::-webkit-scrollbar-thumb  
+{  
+    width: 2px;
+    background-color: #666;
 }
