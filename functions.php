@@ -155,16 +155,18 @@
 			wp_register_style( 'animate', URI . '/css/animate.css');
 			wp_register_style( 'themestyle', URI . '/css/theme-style.css');
 			wp_register_style( 'style', URI . '/style.css');
+			wp_register_style( 'font-awesome', URI . '/fonts/font-awesome/css/font-awesome.css');
 			wp_register_style( 'spongebob', URI . '/css/spongebob.css');
-			wp_register_style( 'font-awesome', URI . '/fonts/font-awesome/css/font-awesome.css');	
+			wp_register_style( 'custom', URI . '/css/custom.css');
 
 			wp_enqueue_style( 'normalize');
 			wp_enqueue_style( 'bootstrap');
 			wp_enqueue_style( 'animate');
 			wp_enqueue_style( 'themestyle');
 			wp_enqueue_style( 'style');
+			wp_enqueue_style( 'font-awesome');
 			wp_enqueue_style( 'spongebob');
-			wp_enqueue_style( 'font-awesome');	
+			wp_enqueue_style( 'custom');
 		}
 	endif;
 	add_action( 'wp_enqueue_scripts', 'milk_theme_styles' );
@@ -213,7 +215,7 @@
 			}
 			
 			if (is_page_template( 'contact-page.php' )){
-				wp_enqueue_script( 'google-maps-js', 'http://maps.google.com/maps/api/js?sensor=false&amp;language=en', array('jquery'), '', true );
+				//wp_enqueue_script( 'google-maps-js', 'http://maps.google.com/maps/api/js?sensor=false&amp;language=en', array('jquery'), '', true );
 				wp_enqueue_script( 'gmap3-js', URI . '/js/gmap3.min.js', array('jquery','google-maps-js'), '', true );
 			}
 
@@ -2921,4 +2923,12 @@ Jim: Bye.",
 		return $avatar;
 	}
 	add_filter('get_avatar', 'get_ssl_avatar');
+
+	/*解决上传文件名包含中文的问题*/
+	function yungjen_handle_upload_files($file) {
+		$time = date('Y-m-d');
+		$file['name'] = $time . "_" . time() . "." . pathinfo($file['name'], PATHINFO_EXTENSION);
+		return $file;
+	}
+	add_filter('wp_handle_upload_prefilter', 'yungjen_handle_upload_files');
 ?>

@@ -1,4 +1,4 @@
-		<footer class="<?php echo esc_attr(get_theme_mod('footer_theme')) ?>">
+		<!--<footer class="<?php echo esc_attr(get_theme_mod('footer_theme')) ?>">
 			<div class="container">
 					<?php if ( is_active_sidebar( 'footer_widget_area' ) ) : ?>
 						<?php dynamic_sidebar( 'footer_widget_area' ); ?>
@@ -21,13 +21,13 @@
 						
 						<?php dynamic_sidebar( 'footer_social_links_area' ); ?>
 						
-					<?php endif; ?>
+						<?php endif; ?>
 					</div>
 					
 					<p>&#169; <?php echo date('Y'); ?> <?php _e('All rights reserved.','milk') ?></p>
 				</div>
 			</div>
-		</footer>
+		</footer>-->
 		</div>
 		<?php wp_footer(); ?>
 	</body>

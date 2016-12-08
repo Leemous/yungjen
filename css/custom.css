@@ -1,0 +1,97 @@
+/*
+    cover style sheet.
+*/
+body {
+    font-family: -apple-system, 'PingFang SC', 'Microsoft YaHei';
+    position: relative;
+    padding-left: 420px;
+}
+
+#sidenav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 420px;
+    padding: 40px 0;
+    text-align: center;
+    background-color: #F6F6F6;
+    overflow: hidden;
+}
+
+#menu-mainmenu li {
+    display: block;
+}
+
+#menu-mainmenu li.current_page_item a {
+    color: #33aaee;
+    text-decoration: underline;
+}
+
+.logo,
+.menu {
+    margin-top: 100px;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.main {
+    min-height: 1080px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #FFF;
+}
+
+@media screen and (max-width: 1440px) {
+    body {
+        padding-left: 360px;
+    }
+
+    #sidenav {
+        width: 360px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        padding-left: 220px;
+    }
+
+    #sidenav {
+        width: 220px;
+    }
+
+    .logo img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding-left: 0;
+    }
+
+    #sidenav {
+        position: static;
+        width: 100%;
+    }
+
+    .logo,
+    .menu {
+        margin-top: 0;
+    }
+
+    .logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .main {
+        min-height: 915px;
+    }
+}
