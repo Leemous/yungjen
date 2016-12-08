@@ -215,7 +215,7 @@
 			}
 			
 			if (is_page_template( 'contact-page.php' )){
-				//wp_enqueue_script( 'google-maps-js', 'http://maps.google.com/maps/api/js?sensor=false&amp;language=en', array('jquery'), '', true );
+				wp_enqueue_script( 'google-maps-js', 'http://maps.google.com/maps/api/js?sensor=false&amp;language=en', array('jquery'), '', true );
 				wp_enqueue_script( 'gmap3-js', URI . '/js/gmap3.min.js', array('jquery','google-maps-js'), '', true );
 			}
 

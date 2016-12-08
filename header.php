@@ -10,14 +10,20 @@
 </head>
 <body <?php body_class(); ?>>
 	<div id="sidenav">
-		<a class='logo' href="<?php echo esc_url( home_url() ); ?>">
-			<img
-				src="<?php echo esc_url(get_theme_mod( 'upload_logo' )) ?>"
-				srcset="<?php echo esc_url(get_theme_mod( 'upload_logo' )) . ' 1x ,' . esc_url(get_theme_mod( 'upload_logo2x' )) . ' 2x' ?>"
-				alt="<?php echo bloginfo('name') ?>">	
+		<div class="logo">
+			<p class="yj-photo">
+				<span class="photo-wrap">
+					<a href="<?php echo esc_url( home_url() ); ?>">
+						<img class="photo"
+							src="<?php echo esc_url(get_theme_mod( 'upload_logo' )) ?>"
+							srcset="<?php echo esc_url(get_theme_mod( 'upload_logo' )) . ' 1x ,' . esc_url(get_theme_mod( 'upload_logo2x' )) . ' 2x' ?>"
+							alt="<?php echo bloginfo('name') ?>">	
+					</a>
+				</span>
+			</p>
 			<h1><?php bloginfo('blogname') ?></h1>
 			<p class="tagline"><?php bloginfo('description') ?></p>
-		</a>
+		</div>
 		<!--MENU-->
 		<a href="" id="responsive-menu-button"><i class="fa fa-bars"></i></a>
 		<nav class="menu">

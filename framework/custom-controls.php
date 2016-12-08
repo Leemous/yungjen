@@ -50,7 +50,7 @@
         <script>
             jQuery(document).ready(function($) {
                 $( "#slider_<?php echo esc_attr($this->id); ?>" ).slider({
-                    value: <?php echo esc_attr($this->value()); ?>,
+                    value: <?php echo esc_attr(is_numeric($this->value()) ? $this->value() : 0); ?>,
                     min: <?php echo esc_attr($this->choices['min']); ?>,
                     max: <?php echo esc_attr($this->choices['max']); ?>,
                     step: <?php echo esc_attr($this->choices['step']); ?>,
