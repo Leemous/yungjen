@@ -24,7 +24,6 @@ body {
 }
 
 #menu-mainmenu li.current_page_item a {
-    padding: 20px;
     color: #3A7BF7;
     text-decoration: underline;
 }
@@ -43,6 +42,19 @@ body {
 
 .menu ul > li {
     margin-right: 0;
+}
+
+.menu ul:not(.sub-menu) > li > a {
+    font-size: 20px;
+    color: #999999;
+}
+
+.menu ul > li:hover > a {
+    color: #3A7BF7;
+}
+
+.menu li > a {
+    padding: 20px;
 }
 
 @media screen and (max-width: 1440px) {
