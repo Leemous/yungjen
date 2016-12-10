@@ -7,6 +7,10 @@ body {
     padding-left: 420px;
 }
 
+p,h1,h2,h3,h4,h5,h6 {
+    font-family: -apple-system, 'PingFang SC';
+}
+
 #sidenav {
     position: fixed;
     top: 0;
@@ -19,28 +23,22 @@ body {
     overflow: hidden;
 }
 
-#menu-mainmenu li {
-    display: block;
-}
-
-#menu-mainmenu li.current_page_item a {
-    color: #3A7BF7;
-    text-decoration: underline;
-}
-
 .logo,
 .menu {
     margin-top: 100px;
 }
 
+.logo .tagline {
+    line-height: 1;
+}
+
 .main {
-    min-height: 1080px;
     padding-left: 15px;
     padding-right: 15px;
     background-color: #FFF;
 }
-
 .menu ul > li {
+    display: block;
     margin-right: 0;
 }
 
@@ -53,8 +51,38 @@ body {
     color: #3A7BF7;
 }
 
-.menu li > a {
+.menu ul > li > a {
     padding: 20px;
+    font-family: "Brandon";
+    font-weight: 500 !important;
+}
+
+.menu ul li.current_page_item a {
+    color: #3A7BF7;
+    text-decoration: underline;
+}
+
+.content {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.content p {
+    padding-top: 20px;
+}
+
+.comment img {
+    width: 50px;
+    height: 50px;
+}
+
+.gallery {
+    background: #FFF;
+}
+
+.work figure .button:hover {
+    background: rgba(44, 44, 44, 1) !important;
 }
 
 @media screen and (max-width: 1440px) {

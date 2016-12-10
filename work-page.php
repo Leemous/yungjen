@@ -48,7 +48,7 @@
 					$pathD = "m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z";
 			}
 		?>
-		<div class="container">
+		<div class="auto-container">
 			<div class="row">
 				<ul class="grid">
 				<?php foreach ($categories as $category) { ?>
@@ -104,7 +104,7 @@
 				<nav class="filters <?php if ($always_filters) {
 					echo 'always_show';
 				} ?>">
-					<div class="container">
+					<div class="auto-container">
 						<ul class="list-inline">
 							<?php $filters = get_terms('work-categorie');
 							
@@ -127,11 +127,13 @@
 				<!--END FILTERS-->
 			</div>
 		<?php } ?>
-		<div class="container">
+		<div class="main">
 			<div class="row">
-				<ul class="grid">
-					
-				</ul>
+				<div class="col-md-10 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
+					<ul class="grid">
+
+					</ul>
+				</div>
 			</div>
 			<div class="row">
 				<button id="load-more" class="btn btn-default" data-pages="<?php echo esc_attr($wp_query->max_num_pages); ?>" data-url="<?php echo esc_url(site_url()) ?>"><i class="fa fa-cloud-download"></i><?php _e('Load more','milk') ?></button>

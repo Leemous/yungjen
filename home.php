@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <?php get_template_part( 'slider', 'template' ); ?>
 <div class="main blog-page">
-	<div class="container">
+	<div class="auto-container">
 		<div class="row">
 			<!--CONTENT GRID-->
 
@@ -80,7 +80,7 @@
 					<ul class="grid">
 						<?php if ( have_posts() ) : while ( have_posts() ) : the_post();
 
-							get_template_part( 'blog', 'template' );
+							get_template_part( 'blog', 'template-yj' );
 
 						endwhile; else: ?>
 

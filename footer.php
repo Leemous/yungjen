@@ -28,6 +28,13 @@
 				</div>
 			</div>
 		</footer>-->
+		<footer class="yj-footer">
+			<div class="row">
+				<div class="copyright col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
+					Copyright &copy; 2016 Yungjen 讲真小宇宙 <?php echo get_option( 'zh_cn_l10n_icp_num' );?>
+				</div>
+			</div>
+		</footer>
 		</div>
 		<?php wp_footer(); ?>
 	</body>
