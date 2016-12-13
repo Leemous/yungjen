@@ -1,4 +1,5 @@
-<?php 
+<?php
+	$global_allow_comments = wp_allow_comment(array());
 	$home_cols = get_theme_mod( 'blog_col_num' );
 	switch ($home_cols) {
 	    case 4: ?>
@@ -78,11 +79,15 @@
 									<ul class="list-inline details">
 										<li>
 											<i class="fa fa-calendar"></i><?php the_time(get_option( 'date_format' )); ?>
-										</li><li>
+										</li>
+										<?php if ($global_allow_comments) {?>
+										<li>
 											<i class="fa fa-comment-o"></i><?php comments_number('0','1','%'); ?>
-										</li><li>
+										</li>
+										<li>
 											<?php echo getPostLikeCount( get_the_ID() ); ?>
 										</li>
+										<?php }?>
 									</ul>
 								</div>
 							<?php }  ?>
@@ -91,205 +96,6 @@
 				</a>
 			<?php }else{ ?>
 				<div <?php post_class('post'); ?>>
-				<?php 
-					$format = get_post_format(get_the_ID()); ?>
-					<?php 
-					switch ($format) {
-					    case "chat": ?>
-					    	<?php 
-					    		$chat = get_post_meta( get_the_ID(), 'chat_list', true );
-					    		if (!empty($chat)) { ?>
-							    	<?php 
-										if ( has_post_thumbnail() ) { ?>
-											<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-											<?php the_post_thumbnail(); ?>
-											</a>
-										<?php } ?>
-							    	<ul class="chat">
-							    	<?php 
-							    		$chat_list = get_post_meta( get_the_ID(), 'chat_list', true );
-							    		$chat_list = trim($chat_list," ");
-							    		$replies = explode("\n", $chat_list); 
-							    		foreach ($replies as $reply) { 
-							    			$reply = explode(":", $reply);
-							    			?>
-							    			<li>
-							    				<h6><?php echo balanceTags($reply[0]); ?></h6><br>
-							    				<p class="msg"><?php echo balanceTags($reply[1]); ?></p>
-							    			</li>
-							    		<?php }
-							    	?>
-							        </ul>
-							    <?php } ?>
-					        <?php break;
-					    case "gallery":  ?>
-				    		<?php 
-							if ( has_post_thumbnail() ) { ?>
-								<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-								<?php the_post_thumbnail(); ?>
-								</a>
-							<?php }else{ ?>
-								<?php 
-									$urls = get_post_meta( get_the_ID(), 'gallery_images', true ); 
-									if (!empty($urls)) { ?>
-										<div class="slider" id="<?php echo 'post_' . get_the_ID(); ?>"
-												data-auto="<?php echo (get_post_meta( get_the_ID(), 'slider_auto', true )=="on") 
-															? 'true' 
-															: 'false'; ?>"
-												data-pause="<?php echo (get_post_meta( get_the_ID(), 'slider_pause', true )=="") 
-															? '2000' 
-															: intval(get_post_meta( get_the_ID(), 'slider_pause', true )); ?>"			
-												data-mode="<?php echo esc_attr(get_post_meta( get_the_ID(), 'slider_mode', true )); ?>"
-										>
-					    					<div class="controls">
-												<p class="prev"><i class="fa fa-angle-left"></i></p>
-												<p class="next"><i class="fa fa-angle-right"></i></p>
-											</div>
-											<ul>
-
-									    	<?php 
-									    		$urls = get_post_meta( get_the_ID(), 'gallery_images', true );
-									    		if (strpos($urls,';') !== false) {
-									    			$urls = substr($urls, 0, -1);
-													$urls = explode(";", $urls);
-													
-													foreach ($urls as $url) {?>
-														<li><a href="<?php echo get_permalink(); ?>">
-															<img src="<?php echo esc_url($url); ?>" alt="<?php the_title(); ?>"/>
-														</a></li>
-													<?php }
-									    		}else{
-									    			$urls = explode(",", $urls);											
-													foreach ($urls as $url) {
-														$attachment = get_post( $url );
-														$caption =  $attachment->post_excerpt;
-														$attr = array('title'	=> $caption);
-														?>
-														<li><a href="<?php echo get_permalink(); ?>">
-															<?php echo wp_get_attachment_image($url,'full',false,$attr); ?>
-														</a></li>
-													<?php }
-									    		}
-									    		
-									    	 ?>
-											</ul>
-										</div>
-								<?php } ?>					    	
-							<?php } ?>
-					        <?php break;
-					    case "link":  ?>
-					    	<?php 
-					    		$link = get_post_meta( get_the_ID(), 'link_text', true );
-					    		if (!empty($link)) { ?>
-					    			<a href="<?php echo get_the_permalink(); ?>">
-						    			<?php if ( has_post_thumbnail() ) {
-											$thumb_id = get_post_thumbnail_id();
-											$thumb_url = wp_get_attachment_image_src($thumb_id,'full', true);
-										?>
-										<blockquote style="	background-color:<?php echo esc_attr(get_post_meta( get_the_ID(), 'link_color', true )); ?>; 
-														background-image:url(<?php echo esc_url($thumb_url[0]); ?>);
-														background-size:cover">
-										<?php }else{ ?>
-							        		<blockquote style="background-color:<?php echo esc_attr(get_post_meta( get_the_ID(), 'link_color', true )); ?>" >
-										<?php } ?>
-										  	<?php 
-									  			if (get_post_meta( get_the_ID(), 'link_text', true ) != "") {
-									  				echo "<p>" . esc_attr(get_post_meta( get_the_ID(), 'link_text', true )) . "</p>"; 
-									  			} 
-										  	?>
-									  		<footer>
-									  			<cite title="Source Title"><i class="fa fa-link"></i><?php echo esc_attr(get_post_meta( get_the_ID(), 'link_ref', true )); ?></cite>
-									  		</footer>
-										</blockquote>	
-									</a>			    			
-					    	<?php } ?>
-							
-					        <?php break;
-					    case "image": ?>
-					        <?php 
-							if ( has_post_thumbnail() ) { ?>
-								<a href="<?php echo get_permalink(); ?>">
-									<?php the_post_thumbnail(); ?>
-								</a>
-					        <?php }else{ ?>
-					        <?php 
-					        	$img = get_post_meta( get_the_ID(), 'image_url', true ); 
-					        	if (!empty($img)) { ?>
-					        	<a href="<?php echo get_permalink(); ?>">
-					        		<img src="<?php echo esc_url($img) ?>" alt="<?php the_title() ?>">
-					        	</a>
-					        	<?php } ?>
-					        <?php } ?>
-					        <?php break;
-					    case "quote":  ?>
-					     	<?php 
-					    		$quote = get_post_meta( get_the_ID(), 'quote_text', true );
-					    		if (!empty($quote)) { ?>
-							    	<a href="<?php echo get_the_permalink(); ?>">
-							    	<?php if ( has_post_thumbnail() ) {
-										$thumb_id = get_post_thumbnail_id();
-										$thumb_url = wp_get_attachment_image_src($thumb_id,'full', true);
-										?>
-										<blockquote style="	background-color:<?php echo esc_attr(get_post_meta( get_the_ID(), 'quote_color', true )); ?>; 
-															background-image:url(<?php echo esc_url($thumb_url[0]); ?>);
-															background-size:cover">
-									<?php }else{ ?>
-								        	<blockquote style="background-color:<?php echo esc_attr(get_post_meta( get_the_ID(), 'quote_color', true )); ?>" >
-									<?php } ?>
-											<p><?php echo esc_attr(get_post_meta( get_the_ID(), 'quote_text', true )); ?></p>
-										  	<?php if (get_post_meta( get_the_ID(), 'quote_ref', true ) != "") { ?>
-										  		<footer><cite title="Source Title"><i class="fa fa-user"></i><?php echo esc_attr(get_post_meta( get_the_ID(), 'quote_ref', true )); ?></cite></footer>
-										  	<?php } ?>
-										</blockquote>
-									</a>
-								<?php } ?>
-					        <?php break;
-					    case "status":  ?>
-					   		<?php if ( has_post_thumbnail() ) {
-								$thumb_id = get_post_thumbnail_id();
-								$thumb_url = wp_get_attachment_image_src($thumb_id,'full', true);
-								?>
-								<div class="status" style="	background-color:<?php echo esc_attr(get_post_meta( get_the_ID(), 'status_color', true )); ?>;
-															background-image:url(<?php echo esc_url($thumb_url[0]); ?>);
-															background-size:cover">
-							<?php }else{ ?>
-						        <div class="status" style="	background-color:<?php echo esc_attr(get_post_meta( get_the_ID(), 'status_color', true )); ?>">
-							<?php } ?>
-								<?php echo balanceTags(get_post_meta( get_the_ID(), 'status_embed_code', true )) ?>
-							</div>
-					        <?php break;
-					    case "video": ?>
-							<?php echo balanceTags(get_post_meta( get_the_ID(), 'video_embed_code', true )); ?>
-					    	<?php break;		
-					    case "audio": ?>
-					        <div class="audio" id="audio_<?php echo get_the_ID(); ?>">
-					        	<?php 
-					        		$code = get_post_meta( get_the_ID(), 'audio_embed_code', true );
-					        		$code = trim($code);
-					        		if (substr($code, 1,6) == "iframe") {
-					        			echo balanceTags($code);
-					        		}elseif (substr($code, 0,4)=="http") { ?>
-					        			<?php if ( has_post_thumbnail() ) { ?>
-											<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-											<?php the_post_thumbnail(); ?>
-											</a>
-										<?php } ?>
-					        			<audio src="<?php echo esc_url($code); ?>"></audio>
-					        		<?php }
-					        	 ?>
-								
-							</div>
-					        <?php break;
-					    default: ?>
-					    	<?php 
-							if ( has_post_thumbnail() ) { ?>
-								<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-								<?php the_post_thumbnail(); ?>
-								</a>
-							<?php } ?>
-					    <?php break;
-					}
-				?>
 				<div class="content">
 					<?php 
 						$show_title = false;
@@ -303,6 +109,15 @@
 						<?php if ($show_title_meta == "always" || empty($show_title_meta)) { ?>
 							<h3><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h3>
 						<?php }  ?>
+						<?php if ( has_post_thumbnail() ) { ?>
+							<div class="thumbnail">
+								<a href="<?php echo get_permalink(); ?>">
+									<?php the_post_thumbnail(); ?>
+								</a>
+							</div>
+						<?php }else{ ?>
+							<div class="no-thumbnail"></div>
+						<?php } ?>
 						<?php if (is_sticky()) { ?>
 							<div class="sticky-label"><p>Featured</p></div>	
 						<?php } ?>
@@ -312,12 +127,16 @@
 						<?php if ($show_meta_meta == "always" || empty($show_meta_meta)) { ?>
 							<ul class="list-inline details">
 								<li>
-									<a href="<?php echo get_day_link(get_post_time('Y'), get_post_time('m'), get_post_time('j')); ?>"><i class="fa fa-calendar"></i><?php the_time(get_option( 'date_format' )); ?></a>
-								</li><li>
+									<a href="<?php echo get_day_link(get_post_time('Y'), get_post_time('m'), get_post_time('j')); ?>"><?php the_time(get_option( 'date_format' )); ?></a>
+								</li>
+								<?php if ($global_allow_comments) {?>
+								<li>
 									<a href="<?php echo get_permalink(); ?>#comments"><i class="fa fa-comment-o"></i><?php comments_number('0','1','%'); ?></a>
-								</li><li>
+								</li>
+								<li>
 									<?php echo getPostLikeLink( get_the_ID() ); ?>
 								</li>
+								<?php }?>
 							</ul>
 						<?php }  ?>
 					</div>

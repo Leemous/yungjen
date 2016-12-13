@@ -1,9 +1,9 @@
 <?php get_header(); ?>
-
+<?php $global_allow_comments = wp_allow_comment(array());?>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 	<div class="main work-page">
-		<div class="container">
+		<div class="auto-container">
 			<div class="row">
 				<?php 
 					$single_layout = get_theme_mod( 'single_work_layout' );
@@ -116,7 +116,7 @@
 						</div>
 					</div>
 					<?php $num = get_comments_number(); ?>
-					<?php if (comments_open() || $num > 0): ?>
+					<?php if ((comments_open() || $num > 0) && $allow_comments): ?>
 						<div class="comments" id="comments">
 							<?php if ($num > 0) { ?>
 								<h3><?php comments_number(); ?></h3>

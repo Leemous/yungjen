@@ -130,9 +130,11 @@
 		<div class="main">
 			<div class="row">
 				<div class="col-md-10 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
-					<ul class="grid">
+					<div class="row">
+						<ul class="grid">
 
-					</ul>
+						</ul>
+					</div>
 				</div>
 			</div>
 			<div class="row">

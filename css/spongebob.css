@@ -111,8 +111,15 @@
 }
 
 .yj-hi-page h3 {
-    text-align: center;
     color: #666;
+    margin: 0;
+    padding: 30px 0 0;
+    text-align: center;
+    border-bottom: 0 none;
+}
+
+.yj-hi-page p {
+    padding-top: 20px;
 }
 
 .yj-hi-page  .image-wrapper img {
@@ -121,14 +128,24 @@
 }
 
 .yj-footer {
+    position: fixed;
+    left: 420px;
+    bottom: 0;
+    right: 0;
     padding: 30px 15px;
     background: transparent;
+    z-index: 999;
 }
 
 .yj-footer .copyright {
-    padding: 0 30px;
     font-size: 12px;
     color: #AAA;
+}
+
+@media screen and (max-width: 1440px) {
+    .yj-footer {
+        left: 360px;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -137,6 +154,10 @@
     .yj-photo .photo {
         width: 80px;
         height: 80px;
+    }
+
+    .yj-footer {
+        left: 220px;
     }
 }
 
@@ -150,5 +171,9 @@
     .yj-photo .photo {
         width: 50px;
         height: 50px;
+    }
+
+    .yj-footer {
+        position: static;
     }
 }

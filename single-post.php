@@ -1,8 +1,9 @@
 <?php get_header(); ?>
+<?php $global_allow_comments = wp_allow_comment(array());?>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 	<div class="main post-page">
-		<div class="container">
+		<div class="auto-container">
 			<div class="row">
 				<?php 
 					$single_layout = get_theme_mod( 'single_layout' );
@@ -258,12 +259,16 @@
 								<?php if ( $show_meta ) { ?>
 									<ul class="list-inline details">
 										<li>
-											<a href="<?php echo get_day_link(get_post_time('Y'), get_post_time('m'), get_post_time('j')); ?>"><i class="fa fa-calendar"></i><?php the_time(get_option('date_format')); ?></a>
-										</li><li>
+											<a href="<?php echo get_day_link(get_post_time('Y'), get_post_time('m'), get_post_time('j')); ?>"><?php the_time(get_option('date_format')); ?></a>
+										</li>
+										<?php if ($global_allow_comments) {?>
+										<li>
 											<a href="#comments"><i class="fa fa-comment-o"></i><?php comments_number(); ?></a>
-										</li><li>
+										</li>
+										<li>
 											<?php echo getPostLikeLink( get_the_ID() ); ?>
 										</li>
+										<?php }?>
 									</ul>
 									<?php } ?>
 								<?php if ( $show_content ) { ?>
@@ -323,20 +328,19 @@
 							</div>
 						<?php } ?>
 					</div>
-					
-						<?php $hide_comments = get_post_meta( get_the_ID(), 'hide_comments', true ); ?>
-						<?php if (!$hide_comments) { ?> 
-							<?php 
-								$num = get_comments_number(); ?>
-								<div class="comments" id="comments">
-								<?php if ($num > 0) { ?>
-									<h3><?php comments_number(); ?></h3>
-								<?php } ?>
-								<?php comments_template( '/comments.php'); ?>
-								</div>
-			            <?php } ?>
-					
-					<?php if (	get_post_meta( get_the_ID(), 'show_related', true )){ ?> 
+					<?php $hide_comments = get_post_meta( get_the_ID(), 'hide_comments', true ); ?>
+					<?php if (!$hide_comments && $global_allow_comments) { ?>
+						<?php
+							$num = get_comments_number(); ?>
+							<div class="comments" id="comments">
+							<?php if ($num > 0) { ?>
+								<h3><?php comments_number(); ?></h3>
+							<?php } ?>
+							<?php comments_template( '/comments.php'); ?>
+							</div>
+					<?php } ?>
+
+					<?php if (	get_post_meta( get_the_ID(), 'show_related', true )){ ?>
 						<div class="related" id="masonry">
 							<div class="row">
 								<ul class="grid">

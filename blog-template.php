@@ -1,4 +1,4 @@
-<?php 
+<?php
 	$home_cols = get_theme_mod( 'blog_col_num' );
 	switch ($home_cols) {
 	    case 4: ?>

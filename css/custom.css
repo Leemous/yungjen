@@ -62,16 +62,6 @@ p,h1,h2,h3,h4,h5,h6 {
     text-decoration: underline;
 }
 
-.content {
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-}
-
-.content p {
-    padding-top: 20px;
-}
-
 .comment img {
     width: 50px;
     height: 50px;
@@ -83,6 +73,59 @@ p,h1,h2,h3,h4,h5,h6 {
 
 .work figure .button:hover {
     background: rgba(44, 44, 44, 1) !important;
+}
+
+.menu li:hover>a {
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.auto-container {
+    width: auto;
+}
+
+.post {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.blog-page .post .thumbnail {
+    padding: 0;
+    border: 0 none;
+}
+
+.post h3 {
+    margin: 0;
+    padding: 30px 0;
+    border-bottom: 0 none;
+}
+
+.blog-page .post p {
+    padding: 0 0 0 10px;
+    line-height: 20px;
+    border-left: 2px solid #3A7BF7;
+    color: #999;
+}
+
+.blog-page .post .details {
+    padding: 15px 0;
+}
+
+.blog-page .post .content h3 a {
+    color: #333;
+}
+
+.page-numbers {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    font-family: -apple-system, 'PingFang SC', 'Microsoft YaHei';
+    background-color: #F3F3F3;
+}
+
+.page-numbers.current {
+    background-color: #3A7BF7;
 }
 
 @media screen and (max-width: 1440px) {
@@ -128,10 +171,6 @@ p,h1,h2,h3,h4,h5,h6 {
 
     .logo .tagline {
         display: none !important;
-    }
-
-    .main {
-        min-height: 915px;
     }
 }
 
